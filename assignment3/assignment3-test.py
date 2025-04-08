@@ -61,7 +61,7 @@ Bob, 32, unknown,2020-03-18,MARKETING
  charlie, NaN, 70000,3/25/2019,marketinG
 Dana, 41, n/a,2020/12/01, HR
 Eve, 24,65000,2021/06/07,  hr
-Frank, 32,75000, 2019-07-11,Sales
+Frank, 32,75000, 2019-7-11,Sales
 Bob, 32, unknown,2020-03-18,MARKETING
 """
 # Read into DataFrame
