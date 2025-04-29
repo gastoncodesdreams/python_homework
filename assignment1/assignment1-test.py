@@ -1,11 +1,15 @@
 import assignment1 as a1
 
+
+##################TASK 1
 def test_hello():
     assert a1.hello() == "Hello!"
 
+##################TASK 2
 def test_greet():
     assert a1.greet("James") == "Hello, James!"
 
+##################TASK 3
 def test_calc():
     assert a1.calc(5,6) == 30
     assert a1.calc(5,6,"add") == 11
@@ -16,6 +20,7 @@ def test_calc():
     assert a1.calc(10,0,"divide") == "You can't divide by 0!"
     assert a1.calc("first", "second", "multiply") == "You can't multiply those values!"
 
+##################TASK 4
 def test_data_type_conversion():
     result = a1.data_type_conversion("110", "int")
     assert type(result).__name__ == "int"
@@ -31,25 +36,31 @@ def test_data_type_conversion():
     assert result == "91.1"
     assert a1.data_type_conversion("banana", "int") == "You can't convert banana into a int."
 
+##################TASK 5
 def test_grade():
     assert a1.grade(75,85,95) == "B"
     assert a1.grade("three", "blind", "mice") == "Invalid data was provided."
 
+##################TASK 6
 def test_repeat():
     assert a1.repeat("up,", 4) == "up,up,up,up,"
 
+##################TASK 7
 def test_student_scores():
     assert a1.student_scores("mean", Tom=75, Dick=89, Angela=91) == (75 + 89 + 91) / 3
     assert a1.student_scores("best", Tom=75, Dick=89, Angela=91, Frank=50 ) == "Angela"
 
+##################TASK 8
 def test_titleize():
     assert a1.titleize("war and peace") == "War and Peace"
     assert a1.titleize("a separate peace") == "A Separate Peace"
     assert a1.titleize("after on") == "After On"
 
+##################TASK 9
 def test_hangman():
     assert a1.hangman("difficulty","ic") == "_i__ic____"
 
+##################TASK 10
 def test_pig_latin():
     assert a1.pig_latin("apple") == "appleay"
     assert a1.pig_latin("banana") == "ananabay"
@@ -57,3 +68,5 @@ def test_pig_latin():
     assert a1.pig_latin("quiet") == "ietquay"
     assert a1.pig_latin("square") == "aresquay"
     assert a1.pig_latin("the quick brown fox") == "ethay ickquay ownbray oxfay"
+
+    
